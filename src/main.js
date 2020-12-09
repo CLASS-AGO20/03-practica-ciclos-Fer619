@@ -45,9 +45,15 @@ export default class App {
 
     elevar(numero, potencia){
 
-        
+        let elevar= 1;
 
-        
+        for(let i=0; i<potencia; i++){
+            elevar= elevar * numero;
+
+        }
+
+        return elevar;    
+               
     }
 
 
@@ -60,5 +66,6 @@ console.log(app.factorial(6));
 
 console.log(app.convertirAString(8));
 
-
 console.log(app.obtenerDivisibles(8));
+
+console.log(app.elevar(2, 3));
