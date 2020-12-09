@@ -13,7 +13,16 @@ export default class App {
     }
 
     convertirAString(numero){
-       
+       let i= 1;
+       let s= "";
+
+       while(i<=numero){
+           i = i + 1;
+           s= s + "*";
+       }
+       return s;
+
+
     } 
 
     obtenerDivisibles(numero){
@@ -33,12 +42,23 @@ export default class App {
 
         return divisible;
     }
+
+    elevar(numero, potencia){
+
+        
+
+        
+    }
+
+
     
 }
 
 let app = new App();
 
 console.log(app.factorial(6));
+
+console.log(app.convertirAString(8));
 
 
 console.log(app.obtenerDivisibles(8));
